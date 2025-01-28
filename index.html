@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartfelt Apology to Adeddie (My Love)</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f3e5f5;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 80%;
+        }
+        h1 {
+            color: #9c27b0;
+        }
+        .apology {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .response {
+            font-size: 22px;
+            font-weight: bold;
+            color: #4caf50;
+        }
+        input[type="text"] {
+            padding: 12px;
+            font-size: 16px;
+            width: 250px;
+            margin-top: 15px;
+            border: 2px solid #9c27b0;
+            border-radius: 10px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            background-color: #9c27b0;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #7b1fa2;
+        }
+        /* Improved signature style */
+        .signature {
+            font-family: 'Dancing Script', cursive;
+            font-size: 28px;
+            margin-top: 30px;
+            color: #9c27b0;
+            transform: rotate(-5deg);
+            letter-spacing: 1px;
+        }
+    </style>
+    <!-- Link to Dancing Script font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Adeddie, I Owe You A Sincere Apology</h1>
+        <p class="apology">
+            My dearest Adeddie.... My Love, <br><br>
+            I am deeply sorry for the way I reacted when I was angry. I know I hurt you badly by sending voice notes with words that were cruel, and I can’t take back the pain I caused. I was so mad, frustrated, and hurt, but that’s no excuse for treating you that way. 😔<br><br>
+            You didn’t deserve any of that, and I am so sorry. You’ve always been kind to me, and I failed to show you the same respect. My actions have made me realize just how much I need you and how much I value our relationship. 💔<br><br>
+            Please, Adeddie, I hope you can find it in your heart to forgive me. I’m truly regretful and heartbroken for what I’ve done. You mean the world to me, and I’ll do anything to make things right between us. ❤️
+        </p>
+        <p>Do you think you could forgive me, my love? (Type "Yes" or "No")</p>
+        <input type="text" id="responseInput" placeholder="Type Yes or No">
+        <button onclick="checkResponse()">Submit</button>
+        
+        <p class="response" id="responseMessage"></p>
+    </div>
+
+    <!-- Signature -->
+    <div class="signature">
+        From your lovely girlfriend Debrah ❤️
+    </div>
+
+    <script>
+        function checkResponse() {
+            var userResponse = document.getElementById("responseInput").value.toLowerCase();
+            var responseMessage = document.getElementById("responseMessage");
+
+            if (userResponse === "yes") {
+                responseMessage.innerHTML = "Thank you for forgiving me, Adeddie. You’ve made my heart whole again. Let’s heal and move forward together, I love you. 💖";
+                responseMessage.style.color = "#4caf50"; // green for accepted
+            } else if (userResponse === "no") {
+                responseMessage.innerHTML = "I understand, and I will respect your feelings. I will continue to work on myself and show you the love and respect you deserve. 💔";
+                responseMessage.style.color = "#f44336"; // red for not accepted
+            } else {
+                responseMessage.innerHTML = "Oops! Please type 'Yes' or 'No'. 🧐";
+                responseMessage.style.color = "#9c27b0"; // purple for invalid input
+            }
+        }
+    </script>
+</body>
+</html>
