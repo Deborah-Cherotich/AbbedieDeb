@@ -20,6 +20,7 @@
             display: inline-block;
             width: 100%;
             max-width: 600px;
+            margin: 0 auto; /* Center the container */
         }
         h1 {
             color: #9c27b0;
@@ -99,6 +100,24 @@
             }
             .signature {
                 font-size: 1.2rem;
+            }
+            input[type="text"] {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .apology {
+                font-size: 0.7rem;
+            }
+            .response {
+                font-size: 0.8rem;
+            }
+            .signature {
+                font-size: 1rem;
+            }
+            button {
+                padding: 8px 15px;
             }
         }
     </style>
